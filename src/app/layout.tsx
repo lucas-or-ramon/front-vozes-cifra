@@ -1,4 +1,6 @@
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
+import { ReactNode } from 'react';
+import '../frontend/@styles/main.scss';
 
 export const metadata: Metadata = {
   title: 'Vozes Cifras',
@@ -13,8 +15,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body id="teste">
-                {children}
-            </body>
+        {children}
+      </body>
     </html>
   )
 }
